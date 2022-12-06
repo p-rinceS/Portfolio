@@ -1,16 +1,17 @@
         // this is my first java script code
-        let myDiv = document.getElementById("cursor");
+        let cursor = document.getElementById('cursor');
 
         let div = document.getElementById("X-Value");
         let div2 = document.getElementById("Y-Value");
 
-        window.addEventListener('mousemove', function(e){
+        document.addEventListener('mousemove', function(e){
+                
                 
                var x = e.x;
                var y = e.y;
                 
-               div.textContent = e.x;
-               div2.textContent = e.y;
-               myDiv.style.left = x + "px";
-               myDiv.style.top = y + "px";
+               div.textContent = e.clientX;
+               div2.textContent = e.clientY;
+               cursor.style.left = x + "px";
+               cursor.style.top = y + "px";
         });

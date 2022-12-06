@@ -16,19 +16,19 @@
                div2.textContent = e.clientY;
                cursor.style.left = x + "px";
                cursor.style.top = y + "px";
-               cursor.style.color
 
-  
         });
 
         // cursor transparency
-        
-        var audio = new Audio("old_click_sound.mp3");
+        // and click audio
+
+        // change if you want to change clickSound"
+        var clickSound = new Audio("old_click_sound.mp3");
 
         addEventListener('click', function(event){
 
-                audio.play();
-                cursor.style.opacity = 1;
-                setTimeout(() => {cursor.style.opacity = .5;}, 100);
+                clickSound.play();
+                cursor.style.opacity = 0;
+                setTimeout(() => {cursor.style.opacity = 1;}, 150);
 
         });

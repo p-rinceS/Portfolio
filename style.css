@@ -1,66 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-image: linear-gradient(1000deg, rgba(11, 11, 53, 0), rgba(173, 173, 173, 1));
-
-
-    
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: clip;
+  background-color: #02121a;
+  background-size: cover;
 }
 
-
-
-
-#cursor{
-    width: 50px;
-    height: 50px;
-    border: 3px solid rgb(255, 255, 255);
-    transition: 0.4s ease-out;
-    opacity: 1;
-    pointer-events: none;
-    transform:translate(-50%, -50%);
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+#cursor {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(255, 255, 255);
+  transition: 0.4s ease-out;
+  opacity: 1;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
 }
 
-p{
-    font-family: "Open Sans";
-}
-footer{
-
-    display:flexbox;
-    top: 100;
-    width: 100vw;
-    text-align: center;
-    font-family: "Open Sans";
-    position: fixed; 
-    text-transform: capitalize;
-    margin-bottom: 1%;
-
-}
-
-footer-content p{
-    font-family: "Open Sans";
-    color: rgb(227, 40, 40);
-
+#activity {
+  width: 40px;
+  height: 40px;
+  border: 10px solid rgba(90, 91, 90, 0.475);
+  background-color: #d3ae19;
+  transition: 0.4s ease-out;
+  border-radius: 50%;
+  position: relative;
+  top: -260px;
+  left: 390px;
+  /* to get double outline */
+  outline: 3px solid rgb(255, 255, 255);
+  z-index: 10;
 }
 
-.profilePic{
-    scale: .35;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10%;
-    border-radius: 45%; 
-
+p {
+  font-family: "Open Sans";
+  color: aliceblue;
+}
+footer {
+  display: flexbox;
+  top: 100;
+  width: 100vw;
+  text-align: center;
+  font-family: "Open Sans";
+  position: fixed;
+  text-transform: capitalize;
+  margin-bottom: 1%;
 }
 
+footer-content p {
+  font-family: "Open Sans";
+  color: rgb(227, 40, 40);
+}
+
+.profilePic {
+  scale: 0.35;
+  height:auto;
+  position:static;
+  display: block;
+  margin-left: auto;
+  margin-right: 160%;
+  margin-top: -10%;
+  border-radius: 60%;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 10px;
+  z-index: 1;
+}

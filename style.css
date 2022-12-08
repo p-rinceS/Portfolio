@@ -2,27 +2,25 @@
   box-sizing: border-box;
 }
 
-:root{
-  --white: rgb(255,0,0);
+:root {
+  --white: rgb(255, 0, 0);
 }
-
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y:hidden;
+  overflow-y: hidden;
   background-color: #1d1d1d;
   background-size: cover;
 }
-
 
 #cursor {
   width: 50px;
   height: 50px;
   border: 3px solid rgb(255, 255, 255);
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -37,8 +35,8 @@ body {
   width: 40px;
   height: 40px;
   border: 10px solid rgba(90, 91, 90, 0.475);
-  background-color: #d3ae19;
-  transition: 0.4s ease-out;
+  background-color: #ffffff;
+  transition: 1s ease-in;
   border-radius: 50%;
   position: absolute;
   top: 310px;
@@ -57,7 +55,7 @@ footer {
   bottom: 0px;
   width: 200px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-family: "Open Sans";
   position: absolute;
   text-transform: capitalize;
@@ -72,11 +70,11 @@ footer-content p {
 .profilePic {
   scale: 0.35;
 
-  height:auto;
-  position:absolute;
+  height: auto;
+  position: absolute;
   margin-left: -150px;
   margin-right: auto;
-  margin-top: auto; 
+  margin-top: auto;
   border-radius: 60%;
   border-color: white;
   border-style: solid;
@@ -85,19 +83,19 @@ footer-content p {
   z-index: 1;
 }
 
-h1{
+h1 {
   font-family: "Open Sans";
   color: white;
 }
 
-span{
+span {
   font-family: "Open Sans";
   color: white;
 }
 
-.intro{
+.intro {
   border: 3px solid rgba(255, 255, 255, 1);
-  width: 200px;
+  width: 250px;
   height: auto;
   font-size: 10px;
   padding-left: 50px;
@@ -105,53 +103,62 @@ span{
   background-color: rgb(32, 27, 27);
   position: absolute;
   margin-left: 250px;
-  top: 175px;;
+  top: 175px;
 }
 
-.background{
+.background {
   width: 1200px;
   height: 900px;
   padding: 10px;
-  background-color:#121212;
+  background-color: #121212;
   top: auto;
   left: auto;
   position: absolute;
-  pointer-events:visible;
+  pointer-events: visible;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
   box-shadow: 0px 0px 500px 10px white;
-
 }
 
-.fa-discord{
+.fa-discord {
   color: white;
   position: absolute;
   top: 50%;
-  left: 50%;  
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.fa-graduation-cap{
+.fa-graduation-cap {
   color: white;
   position: absolute;
-  top:255px;
-  left:325px;
-  transform: translate(-50%,-50%);
+  top: 255px;
+  left: 325px;
+  transform: translate(-50%, -50%);
   z-index: 5;
 }
 
-.quickInt{
+.quickInt {
   font-family: "Open Sans";
   text-transform: capitalize;
   width: 250px;
-  padding-left: 70px;
-  padding-top: 3px;
+  padding-left: 61px;
   color: white;
   font-size: 20px;
   position: absolute;
   top: 220px;
-  left:285px;
+  left: 285px;
   z-index: -1;
+}
+.fa-discord {
+  color: white;
+  position: absolute;
+  top: 285px;
+  left: 325px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.fa-graduation-cap:hover + .quickInt {
 }

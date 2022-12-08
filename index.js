@@ -67,3 +67,5 @@ setInterval(() => {
   // send a request to server every 5 seconds (REFRESH_INTERVAL)
   getActivity();
 }, REFRESH_INTERVAL * 1000);
+
+let studInfo = document.getElementsByClassName("quickInt");

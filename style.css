@@ -174,25 +174,59 @@ span {
 .fa-discord {
   color: white;
   position: absolute;
-  top: 160px;
-  left: 300px;
+  top: 250px;
+  transition: .1s ease-in;
+  left: 350px;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.fa-github{
+  color: white;
+  position: absolute;
+  top: 250px;
+  transition: .1s ease-in;
+  left: 390px;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.fa-linkedin{
+  color: white;
+  position: absolute;
+  top: 250px;
+  transition: .1s ease-in;
+  left: 430px;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.fa-envelope{
+  color: white;
+  position: absolute;
+  top: 250px;
+  transition: .1s ease-in;
+  left: 470px;
   transform: translate(-50%, -50%);
   z-index: 30;
 }
 
 .coupontooltip {
-  display: none;
-  background: #000000;
+  opacity: 0;
+  background: #545353;
   padding: 10px;
-  margin-left: 28px;
+  font-size: 14px;
+  text-align: center;
+  transition: .1s ease-in;
   position: absolute;
   z-index: 1000;
-  width: 115px;
-  height: 22px;
-  top: -40px;
-  left: -65px;
+  width: 80;
+  pointer-events: none;
+  height: 25px;
+  top: 20px;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, .5);
+  left: -22px;
   border-radius: 5px;
-  opacity: 0.5;
 }
 .fa-graduation-cap {
   color: white;
@@ -211,4 +245,37 @@ span {
 
 .fa-discord:hover .coupontooltip {
   display: block;
+  opacity: 1;
+}
+
+
+.fa-github:hover .coupontooltip {
+  display: block;
+  opacity: 1;
+}
+
+.fa-linkedin:hover .coupontooltip {
+  display: block;
+  opacity: 1;
+}
+
+.fa-envelope:hover .coupontooltip {
+  display: block;
+  opacity: 1;
+}
+
+
+
+.fa-discord:hover {
+color: rgba(127, 127, 127, 0.475);
+}
+
+
+.fa-github:hover {
+  color: rgba(127, 127, 127, 0.475);
+  }
+
+
+.projectsPage{
+  display: none;
 }

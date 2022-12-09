@@ -40,6 +40,8 @@ addEventListener("click", function (event) {
   }, 150);
 });
 
+
+
 getActivity();
 
 async function getActivity() {
@@ -47,7 +49,7 @@ async function getActivity() {
   const response = await fetch(api_url);
   const stuff = await response.json();
   const result = JSON.stringify(stuff);
-  console.log(stuff.data.discord_status);
+  console.log(stuff.data);
   let activityCirc = document.getElementById("activity");
   if (stuff.data.discord_status == "offline") {
     activityCirc.style.backgroundColor = "#727672";
@@ -68,4 +70,4 @@ setInterval(() => {
   getActivity();
 }, REFRESH_INTERVAL * 1000);
 
-let studInfo = document.getElementsByClassName("quickInt");
+

@@ -106,6 +106,41 @@ span {
   top: 175px;
 }
 
+.name{
+  width: 250px;
+  height: auto;
+  font-size: 24px;
+  color: rgba(255, 94, .7, .7);
+  position: absolute;
+  left: 380px;
+  top: 165px;
+}
+
+.name .wave{
+  font-size: 30px;
+}
+
+.wave{
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+
+}
+
+@keyframes wave-animation {
+  0% {transform: rotate(0.0deg) }
+  10%{transform: rotate(14.0deg) }
+  20%{transform: rotate(-8.0deg) }
+  30%{transform: rotate(14.0deg) }
+  40%{transform: rotate(-4.0deg) }
+  50%{transform: rotate(10.0deg) }
+  60%{transform: rotate(0.0deg) }
+  100%{transform: rotate(0.0deg) }
+
+}
+
 .background {
   width: 1200px;
   height: 900px;
@@ -122,13 +157,7 @@ span {
   box-shadow: 0px 0px 500px 10px white;
 }
 
-.fa-discord {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 .quickInt {
   opacity: 1;
@@ -175,40 +204,56 @@ span {
   color: white;
   position: absolute;
   top: 250px;
-  transition: .1s ease-in;
-  left: 350px;
+  transition: 0.1s ease-in;
+  left: 330px;
   transform: translate(-50%, -50%);
   z-index: 30;
 }
 
-.fa-github{
+.fa-github {
   color: white;
   position: absolute;
   top: 250px;
-  transition: .1s ease-in;
-  left: 390px;
+  transition: 0.1s ease-in;
+  left: 370px;
   transform: translate(-50%, -50%);
   z-index: 30;
 }
 
-.fa-linkedin{
+.fa-linkedin {
   color: white;
   position: absolute;
   top: 250px;
-  transition: .1s ease-in;
-  left: 430px;
+  transition: 0.1s ease-in;
+  left: 410px;
   transform: translate(-50%, -50%);
   z-index: 30;
 }
 
-.fa-envelope{
+.fa-envelope {
   color: white;
   position: absolute;
   top: 250px;
-  transition: .1s ease-in;
-  left: 470px;
+  transition: 0.1s ease-in;
+  left: 450px;
   transform: translate(-50%, -50%);
   z-index: 30;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .coupontooltip {
@@ -217,14 +262,14 @@ span {
   padding: 10px;
   font-size: 14px;
   text-align: center;
-  transition: .1s ease-in;
+  transition: 0.1s ease-in;
   position: absolute;
   z-index: 1000;
   width: 80;
   pointer-events: none;
   height: 25px;
   top: 20px;
-  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.5);
   left: -22px;
   border-radius: 5px;
 }
@@ -245,37 +290,39 @@ span {
 
 .fa-discord:hover .coupontooltip {
   display: block;
-  opacity: 1;
+  opacity: .7;
 }
-
 
 .fa-github:hover .coupontooltip {
   display: block;
-  opacity: 1;
+  opacity: .7;
 }
 
 .fa-linkedin:hover .coupontooltip {
   display: block;
-  opacity: 1;
+  opacity: .7;
 }
 
 .fa-envelope:hover .coupontooltip {
   display: block;
-  opacity: 1;
+  opacity: .7;
 }
-
-
 
 .fa-discord:hover {
-color: rgba(127, 127, 127, 0.475);
+  color: rgba(255, 94, .7, .7);
 }
 
-
 .fa-github:hover {
-  color: rgba(127, 127, 127, 0.475);
-  }
+  color: rgba(255, 94, .7, .7);
+}
+.fa-linkedin:hover {
+  color: rgba(255, 94, .7, .7);
+}
 
+.fa-envelope:hover {
+  color: rgba(255, 94, .7, .7);
+}
 
-.projectsPage{
+.projectsPage {
   display: none;
 }

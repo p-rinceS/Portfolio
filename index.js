@@ -49,7 +49,7 @@ async function getActivity() {
   const response = await fetch(api_url);
   const stuff = await response.json();
   const result = JSON.stringify(stuff);
-  console.log(stuff.data);
+  // console.log(stuff.data);
   let activityCirc = document.getElementById("activity");
   if (stuff.data.discord_status == "offline") {
     activityCirc.style.backgroundColor = "#727672";

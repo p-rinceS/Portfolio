@@ -16,7 +16,7 @@ Some interesting facts about this project that nobody asked for:
   
   4) Tried to make the website resemble a discord profile. Didn't really work out but eh.
 ```  
-Discord API thing was created using an open sourced discord API called lanyard(https://github.com/Phineas/lanyard).
+Discord API thing was created using an open sourced discord API called [lanyard](https://github.com/Phineas/lanyard).
 
 Regardless had a lot of fun working on this project and I do intend on finishing it when I get the time. ❤️
 

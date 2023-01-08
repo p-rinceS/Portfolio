@@ -70,4 +70,7 @@ setInterval(() => {
   getActivity();
 }, REFRESH_INTERVAL * 1000);
 
+  function imgOp(x){
+    x.style.opacity = 100;
+  }
 
